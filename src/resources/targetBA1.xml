@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessApplication ts_id="1666" ts_name="Tomcat Sample Application">
+    <businessServices>
+        <item ts_id="10666" ts_description="Tomcat Service 1 description" ts_name="Tomcat Service 1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+            <businessTransactions>
+                <item ts_id="100666" ts_description="BT /service1/xx1 description" ts_name="BT /service1/xx1 to delete" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                    <transactions>
+                        <item ts_id="10000666" ts_description="TR /service1/xx1 description" ts_name="TR /service1/xx1" ts_sequence_number="0" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                            <components>
+                                <item ts_id="100000666" ts_name="TC /service1/xx1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP" ts_trancomp_id="100000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.135"/>
+                                        <item ts_name="Port" ts_trancomp_id="100000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8080"/>
+                                    </componentIdentification>
+                                </item>
+                                <item ts_id="200000666" ts_name="TC /service1/xx2" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP" ts_trancomp_id="200000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.136"/>
+                                        <item ts_name="Port" ts_trancomp_id="200000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8081"/>
+                                    </componentIdentification>
+                                </item>
+                            </components>
+                            <cemSpecification>
+                                <item ts_id="5000666" ts_name="Slow Time" ts_value="3200"/>
+                                <item ts_id="6000666" ts_name="Fast Time" ts_value="1700"/>
+                            </cemSpecification>
+                        </item>
+                        <item ts_id="20000666" ts_description="TR /service1/xx2 description" ts_name="TR /service1/xx2" ts_sequence_number="1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                            <components>
+                                <item ts_id="300000666" ts_name="TC /service1/xx1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP" ts_trancomp_id="300000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.135"/>
+                                        <item ts_name="Port" ts_trancomp_id="300000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8080"/>
+                                    </componentIdentification>
+                                </item>
+                                <item ts_id="400000666" ts_name="TC /service1/xx2" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP" ts_trancomp_id="400000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.136"/>
+                                        <item ts_name="Port" ts_trancomp_id="400000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8081"/>
+                                    </componentIdentification>
+                                </item>
+                            </components>
+                            <cemSpecification>
+                                <item ts_id="7000666" ts_name="Slow Time" ts_value="3200"/>
+                                <item ts_id="8000666" ts_name="Fast Time" ts_value="1700"/>
+                            </cemSpecification>
+                        </item>
+                    </transactions>
+                    <cemSpecification>
+                        <item ts_id="1000666" ts_name="Slow Time to delete" ts_value="3000"/>
+                        <item ts_id="2000666" ts_name="Fast Time to delete" ts_value="1500"/>
+                    </cemSpecification>
+                    <tsTransetgroupTransetsMaps>
+                        <item ts_transet_id="100666" ts_transet_incarnation_id="100667" ts_transet_group_id="1066610666" ts_create_date="2016-02-25 10:26:24.799" ts_soft_delete="false"/>
+                    </tsTransetgroupTransetsMaps>
+                </item>
+                <item ts_id="200666" ts_description="BT /service1/xx2 description" ts_name="BT /service1/xx1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                    <transactions>
+                        <item ts_id="30000666" ts_description="TR /service1/xx1 description" ts_name="TR /service1/xx1 to delete" ts_sequence_number="0" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                            <components>
+                                <item ts_id="500000666" ts_name="TC /service1/xx1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP" ts_trancomp_id="500000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.135"/>
+                                        <item ts_name="Port" ts_trancomp_id="500000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8080"/>
+                                    </componentIdentification>
+                                </item>
+                                <item ts_id="600000666" ts_name="TC /service1/xx2" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP" ts_trancomp_id="600000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.136"/>
+                                        <item ts_name="Port" ts_trancomp_id="600000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8081"/>
+                                    </componentIdentification>
+                                </item>
+                            </components>
+                            <cemSpecification>
+                                <item ts_id="9000666" ts_name="Slow Time to delete" ts_value="3200"/>
+                                <item ts_id="10000666" ts_name="Fast Time to delete" ts_value="1700"/>
+                            </cemSpecification>
+                        </item>
+                        <item ts_id="40000666" ts_description="TR /service1/xx2 description" ts_name="TR /service1/xx1" ts_sequence_number="1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                            <components>
+                                <item ts_id="700000666" ts_name="TC /service1/xx2 to delete" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP" ts_trancomp_id="700000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.135"/>
+                                        <item ts_name="Port" ts_trancomp_id="700000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8080"/>
+                                    </componentIdentification>
+                                </item>
+                                <item ts_id="800000666" ts_description="target TC description" ts_name="TC /service1/xx1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                                    <componentIdentification>
+                                        <item ts_name="ClientIP to delete" ts_trancomp_id="800000666" ts_param_type="URL" ts_autogen_sequence="0" ts_pattern="192.168.128.136"/>
+                                        <item ts_name="ClientIP" ts_trancomp_id="800000666" ts_param_type="URL" ts_autogen_sequence="1" ts_pattern="8081"/>
+                                    </componentIdentification>
+                                </item>
+                            </components>
+                            <cemSpecification>
+                                <item ts_id="11000666" ts_name="Slow Time to delete" ts_value="3200"/>
+                                <item ts_id="12000666" ts_name="Slow Time" ts_value="1700"/>
+                            </cemSpecification>
+                        </item>
+                    </transactions>
+                    <cemSpecification>
+                        <item ts_id="3000666" ts_name="Slow Time to delete" ts_value="3100"/>
+                        <item ts_id="4000666" ts_name="Slow Time" ts_value="1510"/>
+                    </cemSpecification>
+                    <tsTransetgroupTransetsMaps>
+                        <item ts_transet_id="200666" ts_transet_incarnation_id="200667" ts_transet_group_id="1066610666" ts_create_date="2016-02-25 10:26:24.799" ts_soft_delete="false" version_info="456"/>
+                    </tsTransetgroupTransetsMaps>
+                </item>
+            </businessTransactions>
+            <tsTransetGroups>
+                <item ts_id="1066610666" ts_description="Tomcat Service 1 description" ts_name="Tomcat Service 1" ts_sigma_sla="0.0" ts_success_rate_sla="0.0">
+                    <tsTransetgroupTransetsMaps>
+                        <item ts_transet_id="100666" ts_transet_incarnation_id="100667" ts_transet_group_id="1066610666" ts_create_date="2016-02-25 10:26:24.799" ts_soft_delete="false"/>
+                        <item ts_transet_id="100666" ts_transet_incarnation_id="100668" ts_transet_group_id="1066610666" ts_create_date="2016-02-25 10:26:24.799" ts_delete_date="2016-02-25 10:26:24.799" ts_soft_delete="true"/>
+                        <item ts_transet_id="200666" ts_transet_incarnation_id="200667" ts_transet_group_id="1066610666" ts_create_date="2016-02-25 10:26:24.799" ts_soft_delete="false" version_info="456"/>
+                        <item ts_transet_id="200666" ts_transet_incarnation_id="200668" ts_transet_group_id="1066610666" ts_create_date="2016-02-25 10:26:24.799" ts_delete_date="2016-02-25 10:26:24.799" ts_soft_delete="true"/>
+                    </tsTransetgroupTransetsMaps>
+                </item>
+            </tsTransetGroups>
+        </item>
+    </businessServices>
+</businessApplication>

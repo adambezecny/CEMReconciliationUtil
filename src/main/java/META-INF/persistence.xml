@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+	<persistence-unit name="CEMReconciliationUtilSource" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplication</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMSpecification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationInterimSessionIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationInterimSessionIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransactionComponentIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransactionComponentIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationSessionIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationSessionIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessService</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransactionComponent</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessTransaction</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransaction</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserGroupIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserGroupIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.TsTransetGroup</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.TsTransetgroupTransetsMap</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.TsTransetgroupTransetsMapPK</class>
+		<properties><!--properties are injected dynamically and stored in application.properties --></properties>
+	</persistence-unit>
+
+	<persistence-unit name="CEMReconciliationUtilTarget" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplication</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMSpecification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationInterimSessionIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationInterimSessionIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransactionComponentIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransactionComponentIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationSessionIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationSessionIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessService</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransactionComponent</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessTransaction</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMTransaction</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserGroupIdentification</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.CEMBusinessApplicationUserGroupIdentificationPK</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.TsTransetGroup</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.TsTransetgroupTransetsMap</class>
+		<class>com.catechnologies.apm.cem.cemdbreconciliation.jpa.entity.TsTransetgroupTransetsMapPK</class>
+		<properties><!--properties are injected dynamically and stored in application.properties --></properties>
+	</persistence-unit>
+	
+</persistence>

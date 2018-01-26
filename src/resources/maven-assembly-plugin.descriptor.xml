@@ -1,0 +1,33 @@
+<assembly>
+  <id>dist</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>true</includeBaseDirectory>
+  <baseDirectory>cem.reconciliation.util-0.0.1</baseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>lib</outputDirectory>
+      <scope>runtime</scope>
+    </dependencySet>
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <directory>src/resources</directory>
+      <outputDirectory>conf</outputDirectory>
+      <excludes>
+        <exclude>sourceBA1.xml</exclude>
+        <exclude>targetBA1.xml</exclude>
+        <exclude>maven-assembly-plugin.descriptor.xml</exclude>
+        <exclude>*.bat</exclude>
+      </excludes>
+    </fileSet>
+    <fileSet>
+      <directory>src/resources</directory>
+      <outputDirectory></outputDirectory>
+      <includes>
+        <include>*.bat</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>
